@@ -55,24 +55,17 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.JPG", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		name: "Jincheng Rao",
-		bio: "Jincheng Rao is a master student at Duke University. He is a Machine Learning summer intern at Forest Vision.",
+		bio: "Jincheng(Jeffery) Rao is a master student at Duke University. He is a Machine Learning summer intern at Forest Vision.",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "LinkedIn",
+			icon: "fa6-brands:linkedin",
+			url: "https://www.linkedin.com/in/jincheng-rao-5a613b25b/",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/jefferyraooji",
 		},
 	],
 };
