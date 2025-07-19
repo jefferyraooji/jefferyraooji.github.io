@@ -1,7 +1,7 @@
 ---
 title: Draft Example
 published: 2022-07-01
-tags: [Markdown, Blogging, Demo]
+tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Examples
 draft: true
 ---
