@@ -63,6 +63,11 @@ export const profileConfig: ProfileConfig = {
 			url: "https://www.linkedin.com/in/jincheng-rao-5a613b25b/",
 		},
 		{
+			name: "Instagram",
+			icon: "fa6-brands:instagram",
+			url: "https://www.instagram.com/jincheng.rao/",
+		},
+		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/jefferyraooji",
