@@ -3,7 +3,7 @@ title: Simple Guides for Fuwari
 published: 2024-04-01
 description: "How to use this blog template."
 image: "./cover.jpeg"
-tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
+tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Guides
 draft: false
 ---

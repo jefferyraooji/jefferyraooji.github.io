@@ -2,7 +2,7 @@
 title: Markdown Example
 published: 2023-10-01
 description: A simple example of a Markdown blog post.
-tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
+tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Examples
 draft: false
 ---

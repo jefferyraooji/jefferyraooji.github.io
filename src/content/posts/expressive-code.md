@@ -2,7 +2,7 @@
 title: Expressive Code Example
 published: 2024-04-10
 description: How code blocks look in Markdown using Expressive Code.
-tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
+tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Examples
 draft: false
 ---

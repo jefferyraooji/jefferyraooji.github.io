@@ -1,7 +1,7 @@
 ---
 title: Draft Example
 published: 2022-07-01
-tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
+tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Examples
 draft: true
 ---

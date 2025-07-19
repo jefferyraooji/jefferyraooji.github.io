@@ -2,7 +2,7 @@
 title: Include Video in the Posts
 published: 2023-08-01
 description: This post demonstrates how to include embedded video in a blog post.
-tags: ["Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
+tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: Examples
 draft: false
 ---
