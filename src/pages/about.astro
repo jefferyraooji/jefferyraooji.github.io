@@ -1,25 +1,32 @@
 ---
 
-import { getEntry, render } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-const aboutPost = await getEntry("spec", "about");
-
-if (!aboutPost) {
-	throw new Error("About page content not found");
-}
-
-const { Content } = await render(aboutPost);
 ---
-<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+<MainGridLayout title={i18n(I18nKey.aboutTitle)} description={i18n(I18nKey.aboutDescription)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
+            <div class="mt-2">
+                <h1 class="text-2xl font-bold mb-4">{i18n(I18nKey.aboutTitle)}</h1>
+                <p class="mb-6">{i18n(I18nKey.aboutDescription)}</p>
+                
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold mb-3">{i18n(I18nKey.sourcesOfImages)}</h2>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><a href="https://unsplash.com/" target="_blank" class="link text-[var(--primary)]">Unsplash</a></li>
+                        <li><a href="https://www.pixiv.net/artworks/108916539" target="_blank" class="link text-[var(--primary)]">星と少女</a> by <a href="https://www.pixiv.net/users/93273965" target="_blank" class="link text-[var(--primary)]">Stella</a></li>
+                        <li><a href="https://civitai.com/posts/586908" target="_blank" class="link text-[var(--primary)]">Rabbit - v1.4 Showcase</a> by <a href="https://civitai.com/user/Rabbit_YourMajesty" target="_blank" class="link text-[var(--primary)]">Rabbit_YourMajesty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mt-6">
+                    <a href="https://github.com/jefferyraooji/jefferyraooji.github.io" target="_blank" class="btn-primary">
+                        {i18n(I18nKey.viewOnGitHub)}
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </MainGridLayout>

@@ -1,0 +1,427 @@
+---
+import { Icon } from "astro-icon/components";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+// 简化的旅行数据，使用国际化
+const travelEntries = [
+	{
+		id: "boston-2025",
+		dateKey: I18nKey.travelDateBoston2025,
+		locationKey: I18nKey.travelLocationBoston2025,
+		titleKey: I18nKey.travelBoston2025,
+		descriptionKey: I18nKey.travelDescBoston2025,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagBoston, I18nKey.tagHistory, I18nKey.tagIndependence],
+		images: ["/assets/images/travel/boston-1.jpg", "/assets/images/travel/boston-2.jpg"]
+	},
+	{
+		id: "seattle-2025", 
+		dateKey: I18nKey.travelDateSeattle2025,
+		locationKey: I18nKey.travelLocationSeattle2025,
+		titleKey: I18nKey.travelSeattle2025,
+		descriptionKey: I18nKey.travelDescSeattle2025,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagSeattle, I18nKey.tagTech, I18nKey.tagCoffee],
+		images: ["/assets/images/travel/seattle-1.jpg", "/assets/images/travel/seattle-2.jpg"]
+	},
+	{
+		id: "hawaii-2025",
+		dateKey: I18nKey.travelDateHawaii2025,
+		locationKey: I18nKey.travelLocationHawaii2025,
+		titleKey: I18nKey.travelHawaii2025,
+		descriptionKey: I18nKey.travelDescHawaii2025,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagHawaii, I18nKey.tagBeach, I18nKey.tagVolcano],
+		images: ["/assets/images/travel/hawaii-1.jpg", "/assets/images/travel/hawaii-2.jpg"]
+	},
+	{
+		id: "washington-2024",
+		dateKey: I18nKey.travelDateWashington2024,
+		locationKey: I18nKey.travelLocationWashington2024,
+		titleKey: I18nKey.travelWashington2024,
+		descriptionKey: I18nKey.travelDescWashington2024,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagWashington, I18nKey.tagPolitics, I18nKey.tagHistory],
+		images: ["/assets/images/travel/washington-1.jpg", "/assets/images/travel/washington-2.jpg"]
+	},
+	{
+		id: "miami-2024",
+		dateKey: I18nKey.travelDateMiami2024,
+		locationKey: I18nKey.travelLocationMiami2024,
+		titleKey: I18nKey.travelMiami2024,
+		descriptionKey: I18nKey.travelDescMiami2024,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagMiami, I18nKey.tagBeach, I18nKey.tagLatin],
+		images: ["/assets/images/travel/miami-1.jpg", "/assets/images/travel/miami-2.jpg"]
+	},
+	{
+		id: "newyork-2024",
+		dateKey: I18nKey.travelDateNewyork2024,
+		locationKey: I18nKey.travelLocationNewyork2024,
+		titleKey: I18nKey.travelNewyork2024,
+		descriptionKey: I18nKey.travelDescNewyork2024,
+		tagKeys: [I18nKey.tagUSA, I18nKey.tagNewYork, I18nKey.tagMetropolis, I18nKey.tagCulture],
+		images: ["/assets/images/travel/newyork-1.jpg", "/assets/images/travel/newyork-2.jpg"]
+	},
+	{
+		id: "zurich-2024",
+		dateKey: I18nKey.travelDateZurich2024,
+		locationKey: I18nKey.travelLocationZurich2024,
+		titleKey: I18nKey.travelZurich2024,
+		descriptionKey: I18nKey.travelDescZurich2024,
+		tagKeys: [I18nKey.tagSwitzerland, I18nKey.tagZurich, I18nKey.tagFinance, I18nKey.tagChocolate],
+		images: ["/assets/images/travel/zurich-1.jpg", "/assets/images/travel/zurich-2.jpg"]
+	},
+	{
+		id: "geneva-2024",
+		dateKey: I18nKey.travelDateGeneva2024,
+		locationKey: I18nKey.travelLocationGeneva2024,
+		titleKey: I18nKey.travelGeneva2024,
+		descriptionKey: I18nKey.travelDescGeneva2024,
+		tagKeys: [I18nKey.tagSwitzerland, I18nKey.tagGeneva, I18nKey.tagInternational, I18nKey.tagWatch],
+		images: ["/assets/images/travel/geneva-1.jpg", "/assets/images/travel/geneva-2.jpg"]
+	},
+	{
+		id: "vatican-2024",
+		dateKey: I18nKey.travelDateVatican2024,
+		locationKey: I18nKey.travelLocationVatican2024,
+		titleKey: I18nKey.travelVatican2024,
+		descriptionKey: I18nKey.travelDescVatican2024,
+		tagKeys: [I18nKey.tagVatican, I18nKey.tagReligion, I18nKey.tagArt, I18nKey.tagHistory],
+		images: ["/assets/images/travel/vatican-1.jpg", "/assets/images/travel/vatican-2.jpg"]
+	},
+	{
+		id: "rome-2024",
+		dateKey: I18nKey.travelDateRome2024,
+		locationKey: I18nKey.travelLocationRome2024,
+		titleKey: I18nKey.travelRome2024,
+		descriptionKey: I18nKey.travelDescRome2024,
+		tagKeys: [I18nKey.tagItaly, I18nKey.tagRome, I18nKey.tagHistory, I18nKey.tagArt],
+		images: ["/assets/images/travel/rome-1.jpg", "/assets/images/travel/rome-2.jpg"]
+	},
+	{
+		id: "venice-2024",
+		dateKey: I18nKey.travelDateVenice2024,
+		locationKey: I18nKey.travelLocationVenice2024,
+		titleKey: I18nKey.travelVenice2024,
+		descriptionKey: I18nKey.travelDescVenice2024,
+		tagKeys: [I18nKey.tagItaly, I18nKey.tagVenice, I18nKey.tagWaterCity, I18nKey.tagRomance],
+		images: ["/assets/images/travel/venice-1.jpg", "/assets/images/travel/venice-2.jpg"]
+	},
+	{
+		id: "milan-2024",
+		dateKey: I18nKey.travelDateMilan2024,
+		locationKey: I18nKey.travelLocationMilan2024,
+		titleKey: I18nKey.travelMilan2024,
+		descriptionKey: I18nKey.travelDescMilan2024,
+		tagKeys: [I18nKey.tagItaly, I18nKey.tagMilan, I18nKey.tagFashion, I18nKey.tagArt],
+		images: ["/assets/images/travel/milan-1.jpg", "/assets/images/travel/milan-2.jpg"]
+	},
+	{
+		id: "london-2023",
+		dateKey: I18nKey.travelDateLondon2023,
+		locationKey: I18nKey.travelLocationLondon2023,
+		titleKey: I18nKey.travelLondon2023,
+		descriptionKey: I18nKey.travelDescLondon2023,
+		tagKeys: [I18nKey.tagUK, I18nKey.tagLondon, I18nKey.tagHistory, I18nKey.tagCulture],
+		images: ["/assets/images/travel/london-1.jpg", "/assets/images/travel/london-2.jpg"]
+	},
+	{
+		id: "edinburgh-2023",
+		dateKey: I18nKey.travelDateEdinburgh2023,
+		locationKey: I18nKey.travelLocationEdinburgh2023,
+		titleKey: I18nKey.travelEdinburgh2023,
+		descriptionKey: I18nKey.travelDescEdinburgh2023,
+		tagKeys: [I18nKey.tagScotland, I18nKey.tagEdinburgh, I18nKey.tagCastle, I18nKey.tagWhisky],
+		images: ["/assets/images/travel/edinburgh-1.jpg", "/assets/images/travel/edinburgh-2.jpg"]
+	},
+	{
+		id: "manchester-2023",
+		dateKey: I18nKey.travelDateManchester2023,
+		locationKey: I18nKey.travelLocationManchester2023,
+		titleKey: I18nKey.travelManchester2023,
+		descriptionKey: I18nKey.travelDescManchester2023,
+		tagKeys: [I18nKey.tagEngland, I18nKey.tagManchester, I18nKey.tagFootball, I18nKey.tagManchesterUnited],
+		images: ["/assets/images/travel/manchester-1.jpg"]
+	},
+	{
+		id: "liverpool-2022",
+		dateKey: I18nKey.travelDateLiverpool2022,
+		locationKey: I18nKey.travelLocationLiverpool2022,
+		titleKey: I18nKey.travelLiverpool2022,
+		descriptionKey: I18nKey.travelDescLiverpool2022,
+		tagKeys: [I18nKey.tagEngland, I18nKey.tagLiverpool, I18nKey.tagMusic, I18nKey.tagBeatles],
+		images: ["/assets/images/travel/liverpool-1.jpg"]
+	}
+];
+---
+
+<MainGridLayout title={i18n(I18nKey.travelFootprint)} description={i18n(I18nKey.travelDescription)}>
+	<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+		<!-- 页面标题 -->
+		<div class="card-base rounded-[var(--radius-large)] p-6 mb-4 text-center">
+			<h1 class="text-3xl font-bold text-[var(--primary)] mb-4">
+				<Icon name="material-symbols:travel-explore" class="inline-block mr-3 text-4xl" />
+				{i18n(I18nKey.travelFootprint)}
+			</h1>
+			<p class="text-lg text-[var(--text-color)] opacity-80 mb-4">
+				{i18n(I18nKey.travelDescription)}
+			</p>
+			<div class="flex justify-center items-center gap-6 text-sm text-[var(--text-color)] opacity-70">
+				<div class="flex items-center gap-2">
+					<Icon name="material-symbols:location-on" class="text-[var(--primary)]" aria-label={i18n(I18nKey.locationIcon)} />
+					<span>{travelEntries.length} {i18n(I18nKey.destinations)}</span>
+				</div>
+				<div class="flex items-center gap-2">
+					<Icon name="material-symbols:calendar-month" class="text-[var(--primary)]" aria-label={i18n(I18nKey.calendarIcon)} />
+					<span>{travelEntries.length} {i18n(I18nKey.trips)}</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 时间轴容器 -->
+		<div class="timeline-container">
+			<!-- 时间轴线 -->
+			<div class="timeline-line"></div>
+			<!-- 时间轴内容 -->
+			{travelEntries.map((entry, index) => (
+				<div class="timeline-item onload-animation" 
+					 style={`animation-delay: calc(var(--content-delay) + ${index * 100}ms);`}>
+					
+					<!-- 时间轴中心 -->
+					<div class="timeline-center">
+						<!-- 年份标签 -->
+						<div class="timeline-year">
+							{i18n(entry.dateKey)}
+						</div>
+						
+						<!-- 时间轴节点 -->
+						<div class="timeline-node"></div>
+					</div>
+					
+					<!-- 内容卡片 -->
+					<div class="timeline-content">
+						<div class="card-base rounded-[var(--radius-large)] overflow-hidden relative">
+							<div class="p-6">
+								<!-- 标题 -->
+								<h3 class="text-2xl font-bold text-[var(--primary)] mb-3 flex items-center">
+									{index % 2 === 0 ? (
+										<>
+											<!-- 右侧城市：保持原有格式 -->
+											<Icon name="material-symbols:location-on" class="mr-2 text-xl" aria-label={i18n(I18nKey.locationIcon)} />
+											{i18n(entry.titleKey)}
+										</>
+									) : (
+										<>
+											<!-- 左侧城市：城市名+位置图标 -->
+											{i18n(entry.titleKey)}
+											<Icon name="material-symbols:location-on" class="ml-2 text-xl" aria-label={i18n(I18nKey.locationIcon)} />
+										</>
+									)}
+								</h3>
+								
+								<!-- 日期和地点 -->
+								<div class="text-sm text-black/30 dark:text-white/30 flex flex-col gap-2 mb-4">
+									<div class="flex items-center gap-1">
+										<Icon name="material-symbols:calendar-month" class="text-[var(--primary)]" aria-label={i18n(I18nKey.calendarIcon)} />
+										<span class="font-medium">{i18n(entry.dateKey)}</span>
+									</div>
+									<div class="flex items-center gap-1">
+										<Icon name="material-symbols:location-on" class="text-[var(--primary)]" aria-label={i18n(I18nKey.locationIcon)} />
+										<span>{i18n(entry.locationKey)}</span>
+									</div>
+								</div>
+							</div>
+							
+							<!-- 图片区域 -->
+							{entry.images.length > 0 && (
+								<div class="p-6 pt-0">
+									<div class="grid grid-cols-1 gap-4">
+										{entry.images.map((image) => (
+											<div class="rounded-lg flex items-center justify-center overflow-hidden">
+												<img 
+													src={image} 
+													alt=""
+													class="max-w-full max-h-80 object-contain rounded-lg"
+													loading="lazy"
+												/>
+											</div>
+										))}
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</MainGridLayout>
+
+<style>
+	.timeline-container {
+		max-width: 1600px;
+		margin: 0 auto;
+		padding: 3rem 8rem 3rem 4rem;
+		position: relative;
+	}
+
+	.timeline-line {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		bottom: 0;
+		width: 4px;
+		background: var(--primary);
+		opacity: 0.8;
+		border-radius: 2px;
+		z-index: -1;
+	}
+
+	.timeline-item {
+		position: relative;
+		margin-bottom: 3rem;
+		min-height: 350px;
+		padding: 0 25rem;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.timeline-center {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 100;
+		top: 0;
+	}
+
+	.timeline-content {
+		position: absolute;
+		top: 0;
+		width: calc(38% - 2rem);
+		max-width: 550px;
+		min-width: 320px;
+		min-height: 350px;
+		z-index: 5;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.timeline-item:nth-child(odd) .timeline-content {
+		left: 0;
+		text-align: left;
+	}
+
+	.timeline-item:nth-child(even) .timeline-content {
+		right: 0;
+		text-align: left;
+	}
+
+	.timeline-year {
+		background: white !important;
+		color: var(--primary) !important;
+		font-size: 0.875rem;
+		font-weight: 700;
+		padding: 0.75rem 1rem;
+		border-radius: 1.5rem;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		margin-bottom: 1.5rem;
+		white-space: nowrap;
+		text-align: center;
+		min-width: 120px;
+		z-index: 99999 !important;
+		position: relative;
+		border: 2px solid var(--card-bg);
+	}
+
+	.timeline-node {
+		width: 2.5rem;
+		height: 2.5rem;
+		background: var(--primary);
+		border-radius: 50%;
+		border: 5px solid var(--card-bg);
+		box-shadow: 0 0 0 4px var(--primary), 0 6px 16px rgba(0, 0, 0, 0.2);
+		animation: pulse 2s infinite;
+		position: relative;
+		z-index: 998;
+	}
+
+	.timeline-node::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0.5rem;
+		height: 0.5rem;
+		background: var(--card-bg);
+		border-radius: 50%;
+	}
+
+
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		50% {
+			opacity: 0.8;
+			transform: scale(1.1);
+		}
+	}
+
+	/* 响应式设计 */
+	@media (max-width: 1024px) {
+		.timeline-container {
+			padding: 2rem 1rem;
+		}
+		
+		.timeline-item {
+			padding: 0 4rem;
+			min-height: 400px;
+		}
+		
+		.timeline-content {
+			width: calc(38% - 1rem);
+			max-width: 450px;
+			min-width: 280px;
+			min-height: 300px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.timeline-container {
+			padding: 1rem;
+		}
+		
+		.timeline-item {
+			flex-direction: column !important;
+			align-items: center;
+			text-align: center;
+			padding: 0 1rem;
+			min-height: auto;
+			margin-bottom: 4rem;
+		}
+		
+		.timeline-center {
+			position: relative;
+			left: auto;
+			transform: none;
+			width: auto;
+			margin-bottom: 2rem;
+		}
+		
+		.timeline-content {
+			position: relative;
+			width: 100%;
+			max-width: 100%;
+			min-width: auto;
+			min-height: auto;
+			left: auto;
+			right: auto;
+			text-align: left;
+			margin-top: 1rem;
+		}
+	}
+</style>

@@ -2,7 +2,7 @@
 title: Markdown Extended Features
 published: 2024-05-01
 updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
+description: 'Read more about Markdown features in Jeffery'
 image: ''
 tags: ["Traveling", "Golf", "Investing", "Texas Hold'em poker", "Wine tasting", "Vinyl records"]
 category: 'Examples'
@@ -17,7 +17,7 @@ You can add dynamic cards that link to GitHub repositories, on page load, the re
 Create a GitHub repository card with the code `::github{repo="<owner>/<repo>"}`.
 
 ```markdown
-::github{repo="saicaca/fuwari"}
+::github{repo="jefferyraooji/jefferyraooji.github.io"}
 ```
 
 ## Admonitions

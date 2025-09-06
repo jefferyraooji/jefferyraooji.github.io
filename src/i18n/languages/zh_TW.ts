@@ -35,4 +35,19 @@ export const zh_TW: Translation = {
 	[Key.author]: "作者",
 	[Key.publishedAt]: "發佈於",
 	[Key.license]: "許可協議",
+
+	// Travel section
+	[Key.travel]: "旅遊",
+	[Key.travelFootprint]: "旅遊足跡",
+	[Key.travelDescription]: "記錄我的旅行足跡和美好回憶",
+	[Key.destinations]: "個目的地",
+	[Key.trips]: "次旅行",
+	[Key.moments]: "個精彩瞬間",
+	[Key.highlights]: "精彩亮點",
+	// Icon labels
+	[Key.locationIcon]: "地點",
+	[Key.calendarIcon]: "日期",
+	[Key.starIcon]: "星星",
+	[Key.checkIcon]: "確認",
+	[Key.imageIcon]: "圖片",
 };

@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is Jeffery's personal website built with Astro.
 
-::github{repo="saicaca/fuwari"}
+::github{repo="jefferyraooji/jefferyraooji.github.io"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
