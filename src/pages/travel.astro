@@ -198,10 +198,10 @@ const travelEntries = [
 					
 					<!-- 内容卡片 -->
 					<div class="timeline-content">
-						<div class="card-base rounded-[var(--radius-large)] overflow-hidden relative">
+						<div class="card-base rounded-[var(--radius-large)] overflow-hidden relative border-2 border-[var(--primary)]/20 shadow-lg">
 							<div class="p-6">
 								<!-- 标题 -->
-								<h3 class="text-2xl font-bold text-[var(--primary)] mb-3 flex items-center">
+								<h3 class="text-3xl font-black text-[var(--primary)] mb-4 flex items-center">
 									{index % 2 === 0 ? (
 										<>
 											<!-- 右侧城市：保持原有格式 -->
@@ -218,14 +218,14 @@ const travelEntries = [
 								</h3>
 								
 								<!-- 日期和地点 -->
-								<div class="text-sm text-black/30 dark:text-white/30 flex flex-col gap-2 mb-4">
-									<div class="flex items-center gap-1">
-										<Icon name="material-symbols:calendar-month" class="text-[var(--primary)]" aria-label={i18n(I18nKey.calendarIcon)} />
-										<span class="font-medium">{i18n(entry.dateKey)}</span>
+								<div class="text-xl flex flex-col gap-3 mb-4">
+									<div class="flex items-center gap-2">
+										<Icon name="material-symbols:calendar-month" class="text-[var(--primary)] text-2xl" aria-label={i18n(I18nKey.calendarIcon)} />
+										<span class="font-black text-[var(--primary)]">{i18n(entry.dateKey)}</span>
 									</div>
-									<div class="flex items-center gap-1">
-										<Icon name="material-symbols:location-on" class="text-[var(--primary)]" aria-label={i18n(I18nKey.locationIcon)} />
-										<span>{i18n(entry.locationKey)}</span>
+									<div class="flex items-center gap-2">
+										<Icon name="material-symbols:location-on" class="text-[var(--primary)] text-2xl" aria-label={i18n(I18nKey.locationIcon)} />
+										<span class="font-black text-[var(--primary)]">{i18n(entry.locationKey)}</span>
 									</div>
 								</div>
 							</div>
@@ -321,18 +321,19 @@ const travelEntries = [
 	.timeline-year {
 		background: white !important;
 		color: var(--primary) !important;
-		font-size: 0.875rem;
-		font-weight: 700;
-		padding: 0.75rem 1rem;
+		font-size: 1.125rem;
+		font-weight: 900;
+		padding: 1rem 1.5rem;
 		border-radius: 1.5rem;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 		margin-bottom: 1.5rem;
 		white-space: nowrap;
 		text-align: center;
-		min-width: 120px;
+		min-width: 140px;
 		z-index: 99999 !important;
 		position: relative;
-		border: 2px solid var(--card-bg);
+		border: 3px solid var(--primary);
+		box-shadow: 0 0 0 2px white, 0 4px 12px rgba(0, 0, 0, 0.2);
 	}
 
 	.timeline-node {
