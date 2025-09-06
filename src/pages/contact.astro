@@ -195,8 +195,11 @@ import { Icon } from "astro-icon/components";
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('contact-form');
-        const submitButton = form.querySelector('button[type="submit"]');
+        const form = document.getElementById('contact-form') as HTMLFormElement;
+        const submitButton = form?.querySelector('button[type="submit"]') as HTMLButtonElement;
+        
+        if (!form || !submitButton) return;
+        
         const originalButtonText = submitButton.innerHTML;
         
         form.addEventListener('submit', function(e) {
