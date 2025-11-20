@@ -39,7 +39,8 @@ export const en: Translation = {
 	// Travel section
 	[Key.travel]: "Travel",
 	[Key.travelFootprint]: "Travel Footprint",
-	[Key.travelDescription]: "Recording my travel footprints and beautiful memories",
+	[Key.travelDescription]:
+		"Recording my travel footprints and beautiful memories",
 	[Key.destinations]: "destinations",
 	[Key.trips]: "trips",
 	[Key.moments]: "amazing moments",
@@ -68,22 +69,38 @@ export const en: Translation = {
 	[Key.travelLondon2023]: "London",
 	[Key.travelEdinburgh2023]: "Edinburgh",
 	// Travel descriptions
-	[Key.travelDescLiverpool2022]: "Experienced Liverpool's music culture, visited the Beatles Museum, and felt the charm of this music city.",
-	[Key.travelDescManchester2023]: "Experienced Manchester's industrial culture, visited Old Trafford Stadium, and felt the charm of this football city.",
-	[Key.travelDescBoston2025]: "Arrived in Boston on Independence Day to experience American historical culture. Visited the Freedom Trail and felt a strong patriotic atmosphere.",
-	[Key.travelDescSeattle2025]: "Explored Seattle's tech culture, visited Microsoft and Amazon headquarters, and experienced the charm of this tech city.",
-	[Key.travelDescHawaii2025]: "Enjoyed sunny beaches in Hawaii, experienced tropical customs. Volcanoes, beaches, culture - everything is here.",
-	[Key.travelDescWashington2024]: "Spent New Year's Eve in Washington D.C., visited political landmarks like the White House and Capitol Building, feeling the historical weight of America's political center.",
-	[Key.travelDescMiami2024]: "Enjoyed warm sunshine and beautiful beaches in Miami, experienced the Latin flavor of South Florida.",
-	[Key.travelDescNewyork2024]: "Explored New York, the city that never sleeps, feeling the hustle and bustle of the metropolis. From Times Square to Central Park, every place is full of charm.",
-	[Key.travelDescZurich2024]: "Experienced Swiss financial culture and refined lifestyle in Zurich, feeling the city's blend of modernity and tradition.",
-	[Key.travelDescGeneva2024]: "Felt the atmosphere of international organizations in Geneva, experienced the city's multiculturalism and natural beauty.",
-	[Key.travelDescVatican2024]: "Visited Vatican City, the world's smallest country, feeling the shock of religious art and the weight of history.",
-	[Key.travelDescRome2024]: "Explored Rome, the Eternal City, feeling the glorious history of the Roman Empire and the artistic charm of the Renaissance.",
-	[Key.travelDescVenice2024]: "Experienced the unique charm of Venice's water city, took gondola rides through canals, feeling the romantic Italian atmosphere.",
-	[Key.travelDescMilan2024]: "Felt the charm of Milan, the fashion capital, visited the cathedral and fashion district, experiencing Italian design aesthetics.",
-	[Key.travelDescLondon2023]: "Experienced British culture in London, visited iconic buildings like Big Ben and Tower Bridge, feeling the historical heritage of Britain.",
-	[Key.travelDescEdinburgh2023]: "Felt Scottish history and culture in Edinburgh, visited Edinburgh Castle, experiencing the charm of this ancient city.",
+	[Key.travelDescLiverpool2022]:
+		"Experienced Liverpool's music culture, visited the Beatles Museum, and felt the charm of this music city.",
+	[Key.travelDescManchester2023]:
+		"Experienced Manchester's industrial culture, visited Old Trafford Stadium, and felt the charm of this football city.",
+	[Key.travelDescBoston2025]:
+		"Arrived in Boston on Independence Day to experience American historical culture. Visited the Freedom Trail and felt a strong patriotic atmosphere.",
+	[Key.travelDescSeattle2025]:
+		"Explored Seattle's tech culture, visited Microsoft and Amazon headquarters, and experienced the charm of this tech city.",
+	[Key.travelDescHawaii2025]:
+		"Enjoyed sunny beaches in Hawaii, experienced tropical customs. Volcanoes, beaches, culture - everything is here.",
+	[Key.travelDescWashington2024]:
+		"Spent New Year's Eve in Washington D.C., visited political landmarks like the White House and Capitol Building, feeling the historical weight of America's political center.",
+	[Key.travelDescMiami2024]:
+		"Enjoyed warm sunshine and beautiful beaches in Miami, experienced the Latin flavor of South Florida.",
+	[Key.travelDescNewyork2024]:
+		"Explored New York, the city that never sleeps, feeling the hustle and bustle of the metropolis. From Times Square to Central Park, every place is full of charm.",
+	[Key.travelDescZurich2024]:
+		"Experienced Swiss financial culture and refined lifestyle in Zurich, feeling the city's blend of modernity and tradition.",
+	[Key.travelDescGeneva2024]:
+		"Felt the atmosphere of international organizations in Geneva, experienced the city's multiculturalism and natural beauty.",
+	[Key.travelDescVatican2024]:
+		"Visited Vatican City, the world's smallest country, feeling the shock of religious art and the weight of history.",
+	[Key.travelDescRome2024]:
+		"Explored Rome, the Eternal City, feeling the glorious history of the Roman Empire and the artistic charm of the Renaissance.",
+	[Key.travelDescVenice2024]:
+		"Experienced the unique charm of Venice's water city, took gondola rides through canals, feeling the romantic Italian atmosphere.",
+	[Key.travelDescMilan2024]:
+		"Felt the charm of Milan, the fashion capital, visited the cathedral and fashion district, experiencing Italian design aesthetics.",
+	[Key.travelDescLondon2023]:
+		"Experienced British culture in London, visited iconic buildings like Big Ben and Tower Bridge, feeling the historical heritage of Britain.",
+	[Key.travelDescEdinburgh2023]:
+		"Felt Scottish history and culture in Edinburgh, visited Edinburgh Castle, experiencing the charm of this ancient city.",
 	// Travel tags
 	[Key.tagEngland]: "England",
 	[Key.tagLiverpool]: "Liverpool",
@@ -170,43 +187,48 @@ export const en: Translation = {
 	[Key.languageSwitch]: "Language",
 	[Key.english]: "English",
 	[Key.chinese]: "中文",
-	
+
 	// Footer
 	[Key.allRightsReserved]: "All Rights Reserved",
 	[Key.rss]: "RSS",
 	[Key.sitemap]: "Sitemap",
 	[Key.poweredBy]: "Powered by",
-	
+
 	// About page
 	[Key.aboutTitle]: "About",
-	[Key.aboutDescription]: "This is Jeffery's personal website built with Astro.",
+	[Key.aboutDescription]:
+		"This is Jeffery's personal website built with Astro.",
 	[Key.sourcesOfImages]: "Sources of images used in this site",
 	[Key.viewOnGitHub]: "View on GitHub",
-	
+
 	// Pagination
 	[Key.previousPage]: "Previous Page",
 	[Key.nextPage]: "Next Page",
 	[Key.page]: "Page",
-	
+
 	// Profile
-	[Key.profileBio]: "Jincheng(Jeffery) Rao is a master student at Duke University. He is a Machine Learning summer intern at Forest Vision.",
-	
+	[Key.profileBio]:
+		"Jincheng(Jeffery) Rao is a master student at Duke University. He is a Machine Learning summer intern at Forest Vision.",
+
 	// Contact
 	[Key.contact]: "Contact",
 	[Key.contactMe]: "Contact Me",
 	[Key.contactTitle]: "Get In Touch",
-	[Key.contactDescription]: "Feel free to reach out if you have any questions or would like to collaborate!",
+	[Key.contactDescription]:
+		"Feel free to reach out if you have any questions or would like to collaborate!",
 	[Key.yourEmail]: "Your email",
 	[Key.yourMessage]: "Your message",
 	[Key.send]: "Send",
 	[Key.emailPlaceholder]: "Enter your email address",
 	[Key.messagePlaceholder]: "Enter your message here...",
-	
+
 	// Appointments
 	[Key.appointments]: "Appointments",
 	[Key.appointmentsTitle]: "Book an Appointment",
-	[Key.appointmentsDescription]: "Schedule a meeting with me using the calendar below. Select an available time slot that works for you.",
+	[Key.appointmentsDescription]:
+		"Schedule a meeting with me using the calendar below. Select an available time slot that works for you.",
 	[Key.bookAppointment]: "Book Appointment",
 	[Key.selectTime]: "Select a time",
-	[Key.appointmentInstructions]: "Please select an available time slot from the calendar below. Once you book, you'll receive a confirmation email with the meeting details.",
+	[Key.appointmentInstructions]:
+		"Please select an available time slot from the calendar below. Once you book, you'll receive a confirmation email with the meeting details.",
 };

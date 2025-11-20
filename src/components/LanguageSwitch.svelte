@@ -1,41 +1,44 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+import { onMount } from "svelte";
 
-	let currentLanguage = 'en';
-	let isOpen = false;
+let currentLanguage = "en";
+let isOpen = false;
 
-	onMount(() => {
-		// 从localStorage获取当前语言，默认为英文
-		const savedLang = localStorage.getItem('language') || 'en';
-		currentLanguage = savedLang;
-		
-		// 监听语言变化事件
-		window.addEventListener('languageChanged', (event: any) => {
-			currentLanguage = event.detail.language;
-		});
+onMount(() => {
+	// 从localStorage获取当前语言，默认为英文
+	const savedLang = localStorage.getItem("language") || "en";
+	currentLanguage = savedLang;
+
+	// 监听语言变化事件
+	window.addEventListener("languageChanged", (event: Event) => {
+		const customEvent = event as CustomEvent<{ language: string }>;
+		currentLanguage = customEvent.detail.language;
 	});
+});
 
-	function toggleDropdown() {
-		isOpen = !isOpen;
-	}
+function toggleDropdown() {
+	isOpen = !isOpen;
+}
 
-	function switchLanguage(lang: string) {
-		currentLanguage = lang;
-		localStorage.setItem('language', lang);
-		document.documentElement.lang = lang;
-		isOpen = false;
-		
-		// 触发自定义事件，通知其他组件更新
-		window.dispatchEvent(new CustomEvent('languageChanged', { 
-			detail: { language: lang } 
-		}));
-		
-		// 不再重新加载页面，而是使用客户端脚本更新内容
-	}
+function switchLanguage(lang: string) {
+	currentLanguage = lang;
+	localStorage.setItem("language", lang);
+	document.documentElement.lang = lang;
+	isOpen = false;
 
-	function getCurrentLanguageName(): string {
-		return currentLanguage === 'en' ? 'English' : '中文';
-	}
+	// 触发自定义事件，通知其他组件更新
+	window.dispatchEvent(
+		new CustomEvent("languageChanged", {
+			detail: { language: lang },
+		}),
+	);
+
+	// 不再重新加载页面，而是使用客户端脚本更新内容
+}
+
+function getCurrentLanguageName(): string {
+	return currentLanguage === "en" ? "English" : "中文";
+}
 </script>
 
 <div class="relative">

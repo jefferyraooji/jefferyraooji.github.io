@@ -68,22 +68,38 @@ export const ko: Translation = {
 	[Key.travelLondon2023]: "런던",
 	[Key.travelEdinburgh2023]: "에든버러",
 	// Travel descriptions
-	[Key.travelDescLiverpool2022]: "리버풀의 음악 문화를 체험하고 비틀즈 박물관을 방문하여 이 음악 도시의 매력을 느꼈습니다.",
-	[Key.travelDescManchester2023]: "맨체스터의 산업 문화를 체험하고 올드 트래포드 스타디움을 방문하여 이 축구 도시의 매력을 느꼈습니다.",
-	[Key.travelDescBoston2025]: "독립기념일에 보스턴에 도착하여 미국의 역사 문화를 체험했습니다. 프리덤 트레일을 방문하고 강한 애국심을 느꼈습니다.",
-	[Key.travelDescSeattle2025]: "시애틀의 기술 문화를 탐험하고 마이크로소프트와 아마존 본사를 방문하여 이 기술 도시의 매력을 체험했습니다.",
-	[Key.travelDescHawaii2025]: "하와이에서 화창한 해변을 즐기고 열대 풍습을 체험했습니다. 화산, 해변, 문화 - 모든 것이 여기에 있습니다.",
-	[Key.travelDescWashington2024]: "워싱턴 D.C.에서 신년을 보내며 백악관과 국회의사당 같은 정치 랜드마크를 방문하여 미국 정치 중심지의 역사적 무게를 느꼈습니다.",
-	[Key.travelDescMiami2024]: "마이애미에서 따뜻한 햇살과 아름다운 해변을 즐기고 남부 플로리다의 라틴 풍미를 체험했습니다.",
-	[Key.travelDescNewyork2024]: "잠들지 않는 도시 뉴욕을 탐험하며 대도시의 번잡함을 느꼈습니다. 타임스 스퀘어부터 센트럴 파크까지, 모든 곳이 매력으로 가득합니다.",
-	[Key.travelDescZurich2024]: "취리히에서 스위스의 금융 문화와 세련된 라이프스타일을 체험하고 도시의 현대성과 전통의 융합을 느꼈습니다.",
-	[Key.travelDescGeneva2024]: "제네바에서 국제기구의 분위기를 느끼고 도시의 다문화주의와 자연의 아름다움을 체험했습니다.",
-	[Key.travelDescVatican2024]: "세계에서 가장 작은 나라 바티칸 시국을 방문하여 종교 예술의 충격과 역사의 무게를 느꼈습니다.",
-	[Key.travelDescRome2024]: "영원한 도시 로마를 탐험하며 로마 제국의 영광스러운 역사와 르네상스의 예술적 매력을 느꼈습니다.",
-	[Key.travelDescVenice2024]: "베니스의 수상 도시의 독특한 매력을 체험하고 운하를 곤돌라로 유람하며 로맨틱한 이탈리아 분위기를 느꼈습니다.",
-	[Key.travelDescMilan2024]: "패션의 수도 밀라노의 매력을 느끼고 대성당과 패션 지구를 방문하여 이탈리아 디자인 미학을 체험했습니다.",
-	[Key.travelDescLondon2023]: "런던에서 영국 문화를 체험하고 빅벤과 타워 브리지 같은 상징적인 건물을 방문하여 영국의 역사적 유산을 느꼈습니다.",
-	[Key.travelDescEdinburgh2023]: "에든버러에서 스코틀랜드의 역사와 문화를 느끼고 에든버러 성을 방문하여 이 고대 도시의 매력을 체험했습니다.",
+	[Key.travelDescLiverpool2022]:
+		"리버풀의 음악 문화를 체험하고 비틀즈 박물관을 방문하여 이 음악 도시의 매력을 느꼈습니다.",
+	[Key.travelDescManchester2023]:
+		"맨체스터의 산업 문화를 체험하고 올드 트래포드 스타디움을 방문하여 이 축구 도시의 매력을 느꼈습니다.",
+	[Key.travelDescBoston2025]:
+		"독립기념일에 보스턴에 도착하여 미국의 역사 문화를 체험했습니다. 프리덤 트레일을 방문하고 강한 애국심을 느꼈습니다.",
+	[Key.travelDescSeattle2025]:
+		"시애틀의 기술 문화를 탐험하고 마이크로소프트와 아마존 본사를 방문하여 이 기술 도시의 매력을 체험했습니다.",
+	[Key.travelDescHawaii2025]:
+		"하와이에서 화창한 해변을 즐기고 열대 풍습을 체험했습니다. 화산, 해변, 문화 - 모든 것이 여기에 있습니다.",
+	[Key.travelDescWashington2024]:
+		"워싱턴 D.C.에서 신년을 보내며 백악관과 국회의사당 같은 정치 랜드마크를 방문하여 미국 정치 중심지의 역사적 무게를 느꼈습니다.",
+	[Key.travelDescMiami2024]:
+		"마이애미에서 따뜻한 햇살과 아름다운 해변을 즐기고 남부 플로리다의 라틴 풍미를 체험했습니다.",
+	[Key.travelDescNewyork2024]:
+		"잠들지 않는 도시 뉴욕을 탐험하며 대도시의 번잡함을 느꼈습니다. 타임스 스퀘어부터 센트럴 파크까지, 모든 곳이 매력으로 가득합니다.",
+	[Key.travelDescZurich2024]:
+		"취리히에서 스위스의 금융 문화와 세련된 라이프스타일을 체험하고 도시의 현대성과 전통의 융합을 느꼈습니다.",
+	[Key.travelDescGeneva2024]:
+		"제네바에서 국제기구의 분위기를 느끼고 도시의 다문화주의와 자연의 아름다움을 체험했습니다.",
+	[Key.travelDescVatican2024]:
+		"세계에서 가장 작은 나라 바티칸 시국을 방문하여 종교 예술의 충격과 역사의 무게를 느꼈습니다.",
+	[Key.travelDescRome2024]:
+		"영원한 도시 로마를 탐험하며 로마 제국의 영광스러운 역사와 르네상스의 예술적 매력을 느꼈습니다.",
+	[Key.travelDescVenice2024]:
+		"베니스의 수상 도시의 독특한 매력을 체험하고 운하를 곤돌라로 유람하며 로맨틱한 이탈리아 분위기를 느꼈습니다.",
+	[Key.travelDescMilan2024]:
+		"패션의 수도 밀라노의 매력을 느끼고 대성당과 패션 지구를 방문하여 이탈리아 디자인 미학을 체험했습니다.",
+	[Key.travelDescLondon2023]:
+		"런던에서 영국 문화를 체험하고 빅벤과 타워 브리지 같은 상징적인 건물을 방문하여 영국의 역사적 유산을 느꼈습니다.",
+	[Key.travelDescEdinburgh2023]:
+		"에든버러에서 스코틀랜드의 역사와 문화를 느끼고 에든버러 성을 방문하여 이 고대 도시의 매력을 체험했습니다.",
 	// Travel tags
 	[Key.tagEngland]: "잉글랜드",
 	[Key.tagLiverpool]: "리버풀",
@@ -170,27 +186,29 @@ export const ko: Translation = {
 	[Key.languageSwitch]: "언어",
 	[Key.english]: "English",
 	[Key.chinese]: "中文",
-	
+
 	// Footer
 	[Key.allRightsReserved]: "모든 권리 보유",
 	[Key.rss]: "RSS",
 	[Key.sitemap]: "사이트맵",
 	[Key.poweredBy]: "Powered by",
-	
+
 	// About page
 	[Key.aboutTitle]: "소개",
-	[Key.aboutDescription]: "이것은 Astro로 구축된 Jeffery의 개인 웹사이트입니다.",
+	[Key.aboutDescription]:
+		"이것은 Astro로 구축된 Jeffery의 개인 웹사이트입니다.",
 	[Key.sourcesOfImages]: "이 사이트에서 사용된 이미지 출처",
 	[Key.viewOnGitHub]: "GitHub에서 보기",
-	
+
 	// Pagination
 	[Key.previousPage]: "이전 페이지",
 	[Key.nextPage]: "다음 페이지",
 	[Key.page]: "페이지",
-	
+
 	// Profile
-	[Key.profileBio]: "Jincheng(Jeffery) Rao는 듀크 대학교의 대학원생입니다. Forest Vision에서 머신러닝 여름 인턴을 하고 있습니다.",
-	
+	[Key.profileBio]:
+		"Jincheng(Jeffery) Rao는 듀크 대학교의 대학원생입니다. Forest Vision에서 머신러닝 여름 인턴을 하고 있습니다.",
+
 	// Contact
 	[Key.contact]: "연락처",
 	[Key.contactMe]: "연락하기",
@@ -201,12 +219,14 @@ export const ko: Translation = {
 	[Key.send]: "보내기",
 	[Key.emailPlaceholder]: "이메일 주소를 입력하세요",
 	[Key.messagePlaceholder]: "메시지를 입력하세요...",
-	
+
 	// Appointments
 	[Key.appointments]: "예약",
 	[Key.appointmentsTitle]: "예약하기",
-	[Key.appointmentsDescription]: "아래 캘린더를 사용하여 저와 미팅을 예약하세요. 편리한 시간대를 선택하세요.",
+	[Key.appointmentsDescription]:
+		"아래 캘린더를 사용하여 저와 미팅을 예약하세요. 편리한 시간대를 선택하세요.",
 	[Key.bookAppointment]: "예약하기",
 	[Key.selectTime]: "시간 선택",
-	[Key.appointmentInstructions]: "아래 캘린더에서 사용 가능한 시간대를 선택해 주세요. 예약 후 회의 세부 정보가 포함된 확인 이메일을 받게 됩니다.",
+	[Key.appointmentInstructions]:
+		"아래 캘린더에서 사용 가능한 시간대를 선택해 주세요. 예약 후 회의 세부 정보가 포함된 확인 이메일을 받게 됩니다.",
 };

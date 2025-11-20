@@ -68,22 +68,38 @@ export const zh_CN: Translation = {
 	[Key.travelLondon2023]: "伦敦",
 	[Key.travelEdinburgh2023]: "爱丁堡",
 	// Travel descriptions
-	[Key.travelDescLiverpool2022]: "在利物浦感受英国的音乐文化，参观披头士博物馆，体验这座音乐之城的魅力。",
-	[Key.travelDescManchester2023]: "在曼彻斯特感受英格兰的工业文化，参观曼联球场，体验这座足球之城的魅力。",
-	[Key.travelDescBoston2025]: "在美国独立日这天来到波士顿，感受美国的历史文化。参观了自由之路，体验了浓厚的爱国氛围。",
-	[Key.travelDescSeattle2025]: "探索西雅图的科技文化，参观了微软和亚马逊总部，感受这座科技之城的魅力。",
-	[Key.travelDescHawaii2025]: "在夏威夷享受阳光海滩，体验热带风情。火山、海滩、文化，这里应有尽有。",
-	[Key.travelDescWashington2024]: "在华盛顿特区跨年，参观了白宫、国会大厦等政治地标，感受美国政治中心的历史厚重感。",
-	[Key.travelDescMiami2024]: "在迈阿密享受温暖的阳光和美丽的海滩，体验南佛罗里达的拉丁风情。",
-	[Key.travelDescNewyork2024]: "探索纽约这座不夜城，感受大都市的繁华与活力。从时代广场到中央公园，每一处都充满魅力。",
-	[Key.travelDescZurich2024]: "在苏黎世感受瑞士的金融文化和精致生活，体验这座城市的现代与传统。",
-	[Key.travelDescGeneva2024]: "在日内瓦感受国际组织的氛围，体验这座城市的多元文化和自然美景。",
-	[Key.travelDescVatican2024]: "参观世界上最小的国家梵蒂冈，感受宗教艺术的震撼和历史的厚重。",
-	[Key.travelDescRome2024]: "探索罗马这座永恒之城，感受古罗马帝国的辉煌历史和文艺复兴的艺术魅力。",
-	[Key.travelDescVenice2024]: "在威尼斯体验独特的水城风情，乘坐贡多拉穿梭在运河之间，感受浪漫的意大利风情。",
-	[Key.travelDescMilan2024]: "在米兰感受时尚之都的魅力，参观大教堂和时尚区，体验意大利的设计美学。",
-	[Key.travelDescLondon2023]: "在伦敦体验英伦文化，参观大本钟、伦敦塔桥等标志性建筑，感受英国的历史底蕴。",
-	[Key.travelDescEdinburgh2023]: "在爱丁堡感受苏格兰的历史文化，参观爱丁堡城堡，体验这座古城的魅力。",
+	[Key.travelDescLiverpool2022]:
+		"在利物浦感受英国的音乐文化，参观披头士博物馆，体验这座音乐之城的魅力。",
+	[Key.travelDescManchester2023]:
+		"在曼彻斯特感受英格兰的工业文化，参观曼联球场，体验这座足球之城的魅力。",
+	[Key.travelDescBoston2025]:
+		"在美国独立日这天来到波士顿，感受美国的历史文化。参观了自由之路，体验了浓厚的爱国氛围。",
+	[Key.travelDescSeattle2025]:
+		"探索西雅图的科技文化，参观了微软和亚马逊总部，感受这座科技之城的魅力。",
+	[Key.travelDescHawaii2025]:
+		"在夏威夷享受阳光海滩，体验热带风情。火山、海滩、文化，这里应有尽有。",
+	[Key.travelDescWashington2024]:
+		"在华盛顿特区跨年，参观了白宫、国会大厦等政治地标，感受美国政治中心的历史厚重感。",
+	[Key.travelDescMiami2024]:
+		"在迈阿密享受温暖的阳光和美丽的海滩，体验南佛罗里达的拉丁风情。",
+	[Key.travelDescNewyork2024]:
+		"探索纽约这座不夜城，感受大都市的繁华与活力。从时代广场到中央公园，每一处都充满魅力。",
+	[Key.travelDescZurich2024]:
+		"在苏黎世感受瑞士的金融文化和精致生活，体验这座城市的现代与传统。",
+	[Key.travelDescGeneva2024]:
+		"在日内瓦感受国际组织的氛围，体验这座城市的多元文化和自然美景。",
+	[Key.travelDescVatican2024]:
+		"参观世界上最小的国家梵蒂冈，感受宗教艺术的震撼和历史的厚重。",
+	[Key.travelDescRome2024]:
+		"探索罗马这座永恒之城，感受古罗马帝国的辉煌历史和文艺复兴的艺术魅力。",
+	[Key.travelDescVenice2024]:
+		"在威尼斯体验独特的水城风情，乘坐贡多拉穿梭在运河之间，感受浪漫的意大利风情。",
+	[Key.travelDescMilan2024]:
+		"在米兰感受时尚之都的魅力，参观大教堂和时尚区，体验意大利的设计美学。",
+	[Key.travelDescLondon2023]:
+		"在伦敦体验英伦文化，参观大本钟、伦敦塔桥等标志性建筑，感受英国的历史底蕴。",
+	[Key.travelDescEdinburgh2023]:
+		"在爱丁堡感受苏格兰的历史文化，参观爱丁堡城堡，体验这座古城的魅力。",
 	// Travel tags
 	[Key.tagEngland]: "英格兰",
 	[Key.tagLiverpool]: "利物浦",
@@ -170,27 +186,28 @@ export const zh_CN: Translation = {
 	[Key.languageSwitch]: "语言",
 	[Key.english]: "English",
 	[Key.chinese]: "中文",
-	
+
 	// Footer
 	[Key.allRightsReserved]: "版权所有",
 	[Key.rss]: "RSS",
 	[Key.sitemap]: "网站地图",
 	[Key.poweredBy]: "技术支持",
-	
+
 	// About page
 	[Key.aboutTitle]: "关于",
 	[Key.aboutDescription]: "这是Jeffery使用Astro构建的个人网站。",
 	[Key.sourcesOfImages]: "本网站使用的图片来源",
 	[Key.viewOnGitHub]: "在GitHub上查看",
-	
+
 	// Pagination
 	[Key.previousPage]: "上一页",
 	[Key.nextPage]: "下一页",
 	[Key.page]: "第",
-	
+
 	// Profile
-	[Key.profileBio]: "Jincheng(Jeffery) Rao是杜克大学的研究生。他是Forest Vision的机器学习暑期实习生。",
-	
+	[Key.profileBio]:
+		"Jincheng(Jeffery) Rao是杜克大学的研究生。他是Forest Vision的机器学习暑期实习生。",
+
 	// Contact
 	[Key.contact]: "联系",
 	[Key.contactMe]: "联系我",
@@ -201,12 +218,14 @@ export const zh_CN: Translation = {
 	[Key.send]: "发送",
 	[Key.emailPlaceholder]: "请输入您的邮箱地址",
 	[Key.messagePlaceholder]: "请输入您的消息...",
-	
+
 	// Appointments
 	[Key.appointments]: "预约",
 	[Key.appointmentsTitle]: "预约会面",
-	[Key.appointmentsDescription]: "使用下面的日历与我预约会面。选择一个适合您的可用时间段。",
+	[Key.appointmentsDescription]:
+		"使用下面的日历与我预约会面。选择一个适合您的可用时间段。",
 	[Key.bookAppointment]: "预约会面",
 	[Key.selectTime]: "选择时间",
-	[Key.appointmentInstructions]: "请从下面的日历中选择一个可用的时间段。预约成功后，您将收到一封包含会议详情的确认邮件。",
+	[Key.appointmentInstructions]:
+		"请从下面的日历中选择一个可用的时间段。预约成功后，您将收到一封包含会议详情的确认邮件。",
 };

@@ -39,7 +39,8 @@ export const es: Translation = {
 	// Travel section
 	[Key.travel]: "Viajes",
 	[Key.travelFootprint]: "Huella de Viaje",
-	[Key.travelDescription]: "Registrando mis huellas de viaje y hermosos recuerdos",
+	[Key.travelDescription]:
+		"Registrando mis huellas de viaje y hermosos recuerdos",
 	[Key.destinations]: "destinos",
 	[Key.trips]: "viajes",
 	[Key.moments]: "momentos increíbles",
@@ -68,22 +69,38 @@ export const es: Translation = {
 	[Key.travelLondon2023]: "Londres",
 	[Key.travelEdinburgh2023]: "Edimburgo",
 	// Travel descriptions
-	[Key.travelDescLiverpool2022]: "Experimenté la cultura musical de Liverpool, visité el Museo de los Beatles y sentí el encanto de esta ciudad musical.",
-	[Key.travelDescManchester2023]: "Experimenté la cultura industrial de Manchester, visité el Estadio Old Trafford y sentí el encanto de esta ciudad del fútbol.",
-	[Key.travelDescBoston2025]: "Llegué a Boston el Día de la Independencia para experimentar la cultura histórica estadounidense. Visité el Freedom Trail y sentí una fuerte atmósfera patriótica.",
-	[Key.travelDescSeattle2025]: "Exploré la cultura tecnológica de Seattle, visité las sedes de Microsoft y Amazon, y experimenté el encanto de esta ciudad tecnológica.",
-	[Key.travelDescHawaii2025]: "Disfruté de playas soleadas en Hawaii, experimenté costumbres tropicales. Volcanes, playas, cultura - todo está aquí.",
-	[Key.travelDescWashington2024]: "Pasé la Nochevieja en Washington D.C., visité hitos políticos como la Casa Blanca y el Capitolio, sintiendo el peso histórico del centro político de Estados Unidos.",
-	[Key.travelDescMiami2024]: "Disfruté del cálido sol y hermosas playas en Miami, experimenté el sabor latino del sur de Florida.",
-	[Key.travelDescNewyork2024]: "Exploré Nueva York, la ciudad que nunca duerme, sintiendo el bullicio de la metrópolis. Desde Times Square hasta Central Park, cada lugar está lleno de encanto.",
-	[Key.travelDescZurich2024]: "Experimenté la cultura financiera suiza y el estilo de vida refinado en Zúrich, sintiendo la mezcla de modernidad y tradición de la ciudad.",
-	[Key.travelDescGeneva2024]: "Sentí la atmósfera de organizaciones internacionales en Ginebra, experimenté el multiculturalismo y la belleza natural de la ciudad.",
-	[Key.travelDescVatican2024]: "Visité la Ciudad del Vaticano, el país más pequeño del mundo, sintiendo el impacto del arte religioso y el peso de la historia.",
-	[Key.travelDescRome2024]: "Exploré Roma, la Ciudad Eterna, sintiendo la gloriosa historia del Imperio Romano y el encanto artístico del Renacimiento.",
-	[Key.travelDescVenice2024]: "Experimenté el encanto único de la ciudad acuática de Venecia, navegué en góndola por los canales, sintiendo la atmósfera romántica italiana.",
-	[Key.travelDescMilan2024]: "Sentí el encanto de Milán, la capital de la moda, visité la catedral y el distrito de la moda, experimentando la estética del diseño italiano.",
-	[Key.travelDescLondon2023]: "Experimenté la cultura británica en Londres, visité edificios icónicos como Big Ben y Tower Bridge, sintiendo el patrimonio histórico de Gran Bretaña.",
-	[Key.travelDescEdinburgh2023]: "Sentí la historia y cultura escocesa en Edimburgo, visité el Castillo de Edimburgo, experimentando el encanto de esta ciudad antigua.",
+	[Key.travelDescLiverpool2022]:
+		"Experimenté la cultura musical de Liverpool, visité el Museo de los Beatles y sentí el encanto de esta ciudad musical.",
+	[Key.travelDescManchester2023]:
+		"Experimenté la cultura industrial de Manchester, visité el Estadio Old Trafford y sentí el encanto de esta ciudad del fútbol.",
+	[Key.travelDescBoston2025]:
+		"Llegué a Boston el Día de la Independencia para experimentar la cultura histórica estadounidense. Visité el Freedom Trail y sentí una fuerte atmósfera patriótica.",
+	[Key.travelDescSeattle2025]:
+		"Exploré la cultura tecnológica de Seattle, visité las sedes de Microsoft y Amazon, y experimenté el encanto de esta ciudad tecnológica.",
+	[Key.travelDescHawaii2025]:
+		"Disfruté de playas soleadas en Hawaii, experimenté costumbres tropicales. Volcanes, playas, cultura - todo está aquí.",
+	[Key.travelDescWashington2024]:
+		"Pasé la Nochevieja en Washington D.C., visité hitos políticos como la Casa Blanca y el Capitolio, sintiendo el peso histórico del centro político de Estados Unidos.",
+	[Key.travelDescMiami2024]:
+		"Disfruté del cálido sol y hermosas playas en Miami, experimenté el sabor latino del sur de Florida.",
+	[Key.travelDescNewyork2024]:
+		"Exploré Nueva York, la ciudad que nunca duerme, sintiendo el bullicio de la metrópolis. Desde Times Square hasta Central Park, cada lugar está lleno de encanto.",
+	[Key.travelDescZurich2024]:
+		"Experimenté la cultura financiera suiza y el estilo de vida refinado en Zúrich, sintiendo la mezcla de modernidad y tradición de la ciudad.",
+	[Key.travelDescGeneva2024]:
+		"Sentí la atmósfera de organizaciones internacionales en Ginebra, experimenté el multiculturalismo y la belleza natural de la ciudad.",
+	[Key.travelDescVatican2024]:
+		"Visité la Ciudad del Vaticano, el país más pequeño del mundo, sintiendo el impacto del arte religioso y el peso de la historia.",
+	[Key.travelDescRome2024]:
+		"Exploré Roma, la Ciudad Eterna, sintiendo la gloriosa historia del Imperio Romano y el encanto artístico del Renacimiento.",
+	[Key.travelDescVenice2024]:
+		"Experimenté el encanto único de la ciudad acuática de Venecia, navegué en góndola por los canales, sintiendo la atmósfera romántica italiana.",
+	[Key.travelDescMilan2024]:
+		"Sentí el encanto de Milán, la capital de la moda, visité la catedral y el distrito de la moda, experimentando la estética del diseño italiano.",
+	[Key.travelDescLondon2023]:
+		"Experimenté la cultura británica en Londres, visité edificios icónicos como Big Ben y Tower Bridge, sintiendo el patrimonio histórico de Gran Bretaña.",
+	[Key.travelDescEdinburgh2023]:
+		"Sentí la historia y cultura escocesa en Edimburgo, visité el Castillo de Edimburgo, experimentando el encanto de esta ciudad antigua.",
 	// Travel tags
 	[Key.tagEngland]: "Inglaterra",
 	[Key.tagLiverpool]: "Liverpool",
@@ -170,43 +187,48 @@ export const es: Translation = {
 	[Key.languageSwitch]: "Idioma",
 	[Key.english]: "English",
 	[Key.chinese]: "中文",
-	
+
 	// Footer
 	[Key.allRightsReserved]: "Todos los Derechos Reservados",
 	[Key.rss]: "RSS",
 	[Key.sitemap]: "Mapa del Sitio",
 	[Key.poweredBy]: "Desarrollado por",
-	
+
 	// About page
 	[Key.aboutTitle]: "Sobre mí",
-	[Key.aboutDescription]: "Este es el sitio web personal de Jeffery construido con Astro.",
+	[Key.aboutDescription]:
+		"Este es el sitio web personal de Jeffery construido con Astro.",
 	[Key.sourcesOfImages]: "Fuentes de imágenes utilizadas en este sitio",
 	[Key.viewOnGitHub]: "Ver en GitHub",
-	
+
 	// Pagination
 	[Key.previousPage]: "Página Anterior",
 	[Key.nextPage]: "Página Siguiente",
 	[Key.page]: "Página",
-	
+
 	// Profile
-	[Key.profileBio]: "Jincheng(Jeffery) Rao es un estudiante de maestría en la Universidad de Duke. Es pasante de verano de Machine Learning en Forest Vision.",
-	
+	[Key.profileBio]:
+		"Jincheng(Jeffery) Rao es un estudiante de maestría en la Universidad de Duke. Es pasante de verano de Machine Learning en Forest Vision.",
+
 	// Contact
 	[Key.contact]: "Contacto",
 	[Key.contactMe]: "Contáctame",
 	[Key.contactTitle]: "Ponte en Contacto",
-	[Key.contactDescription]: "¡No dudes en contactarme si tienes alguna pregunta o te gustaría colaborar!",
+	[Key.contactDescription]:
+		"¡No dudes en contactarme si tienes alguna pregunta o te gustaría colaborar!",
 	[Key.yourEmail]: "Tu email",
 	[Key.yourMessage]: "Tu mensaje",
 	[Key.send]: "Enviar",
 	[Key.emailPlaceholder]: "Ingresa tu dirección de email",
 	[Key.messagePlaceholder]: "Ingresa tu mensaje aquí...",
-	
+
 	// Appointments
 	[Key.appointments]: "Citas",
 	[Key.appointmentsTitle]: "Reservar una Cita",
-	[Key.appointmentsDescription]: "Programa una reunión conmigo usando el calendario a continuación. Selecciona un horario disponible que te funcione.",
+	[Key.appointmentsDescription]:
+		"Programa una reunión conmigo usando el calendario a continuación. Selecciona un horario disponible que te funcione.",
 	[Key.bookAppointment]: "Reservar Cita",
 	[Key.selectTime]: "Seleccionar un horario",
-	[Key.appointmentInstructions]: "Por favor selecciona un horario disponible del calendario a continuación. Una vez que reserves, recibirás un correo de confirmación con los detalles de la reunión.",
+	[Key.appointmentInstructions]:
+		"Por favor selecciona un horario disponible del calendario a continuación. Una vez que reserves, recibirás un correo de confirmación con los detalles de la reunión.",
 };

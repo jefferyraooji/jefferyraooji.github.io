@@ -167,27 +167,27 @@ enum I18nKey {
 	languageSwitch = "languageSwitch",
 	english = "english",
 	chinese = "chinese",
-	
+
 	// Footer
 	allRightsReserved = "allRightsReserved",
 	rss = "rss",
 	sitemap = "sitemap",
 	poweredBy = "poweredBy",
-	
+
 	// About page
 	aboutTitle = "aboutTitle",
 	aboutDescription = "aboutDescription",
 	sourcesOfImages = "sourcesOfImages",
 	viewOnGitHub = "viewOnGitHub",
-	
+
 	// Pagination
 	previousPage = "previousPage",
 	nextPage = "nextPage",
 	page = "page",
-	
+
 	// Profile
 	profileBio = "profileBio",
-	
+
 	// Contact
 	contact = "contact",
 	contactMe = "contactMe",
@@ -198,7 +198,7 @@ enum I18nKey {
 	send = "send",
 	emailPlaceholder = "emailPlaceholder",
 	messagePlaceholder = "messagePlaceholder",
-	
+
 	// Appointments
 	appointments = "appointments",
 	appointmentsTitle = "appointmentsTitle",

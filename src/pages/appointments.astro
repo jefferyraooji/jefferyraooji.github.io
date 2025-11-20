@@ -1,11 +1,12 @@
 ---
+import { Icon } from "astro-icon/components";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import { Icon } from "astro-icon/components";
 
 // Google Calendar appointment scheduling URL
-const GOOGLE_CALENDAR_EMBED_URL = "https://calendar.app.google/nZ7uaDZsnU472oTQA";
+const GOOGLE_CALENDAR_EMBED_URL =
+	"https://calendar.app.google/nZ7uaDZsnU472oTQA";
 ---
 
 <MainGridLayout title={i18n(I18nKey.appointmentsTitle)} description={i18n(I18nKey.appointmentsDescription)}>
