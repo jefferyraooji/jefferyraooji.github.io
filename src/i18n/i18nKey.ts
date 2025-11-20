@@ -206,6 +206,7 @@ enum I18nKey {
 	bookAppointment = "bookAppointment",
 	selectTime = "selectTime",
 	appointmentInstructions = "appointmentInstructions",
+	appointmentClickButton = "appointmentClickButton",
 }
 
 export default I18nKey;

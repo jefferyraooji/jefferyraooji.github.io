@@ -119,6 +119,8 @@ function updatePageContent(lang) {
 			selectTime: "Select a time",
 			appointmentInstructions:
 				"Please select an available time slot from the calendar below. Once you book, you'll receive a confirmation email with the meeting details.",
+			appointmentClickButton:
+				"Click the button below to open Google Calendar and select a convenient time for our meeting.",
 		},
 		zh_cn: {
 			// 导航栏
@@ -221,6 +223,8 @@ function updatePageContent(lang) {
 			selectTime: "选择时间",
 			appointmentInstructions:
 				"请从下面的日历中选择一个可用的时间段。预约成功后，您将收到一封包含会议详情的确认邮件。",
+			appointmentClickButton:
+				"点击下方按钮打开 Google 日历，选择一个方便的会面时间。",
 		},
 	};
 
@@ -601,6 +605,12 @@ function updateAppointmentsPage(t) {
 			text.includes("请从下面的日历中选择")
 		) {
 			el.textContent = t.appointmentInstructions;
+		}
+		if (
+			text.includes("Click the button below to open Google Calendar") ||
+			text.includes("点击下方按钮打开 Google 日历")
+		) {
+			el.textContent = t.appointmentClickButton;
 		}
 	});
 }

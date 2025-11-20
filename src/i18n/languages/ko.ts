@@ -229,4 +229,6 @@ export const ko: Translation = {
 	[Key.selectTime]: "시간 선택",
 	[Key.appointmentInstructions]:
 		"아래 캘린더에서 사용 가능한 시간대를 선택해 주세요. 예약 후 회의 세부 정보가 포함된 확인 이메일을 받게 됩니다.",
+	[Key.appointmentClickButton]:
+		"아래 버튼을 클릭하여 Google 캘린더를 열고 편리한 회의 시간을 선택하세요.",
 };

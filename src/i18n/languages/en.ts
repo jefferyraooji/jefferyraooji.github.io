@@ -231,4 +231,6 @@ export const en: Translation = {
 	[Key.selectTime]: "Select a time",
 	[Key.appointmentInstructions]:
 		"Please select an available time slot from the calendar below. Once you book, you'll receive a confirmation email with the meeting details.",
+	[Key.appointmentClickButton]:
+		"Click the button below to open Google Calendar and select a convenient time for our meeting.",
 };

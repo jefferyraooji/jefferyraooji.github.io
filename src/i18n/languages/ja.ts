@@ -230,4 +230,6 @@ export const ja: Translation = {
 	[Key.selectTime]: "時間を選択",
 	[Key.appointmentInstructions]:
 		"下のカレンダーから利用可能な時間枠を選択してください。予約後、会議の詳細を含む確認メールが届きます。",
+	[Key.appointmentClickButton]:
+		"下のボタンをクリックしてGoogle カレンダーを開き、都合の良い会議時間を選択してください。",
 };

@@ -228,4 +228,6 @@ export const zh_TW: Translation = {
 	[Key.selectTime]: "選擇時間",
 	[Key.appointmentInstructions]:
 		"請從下面的日曆中選擇一個可用的時間段。預約成功後，您將收到一封包含會議詳情的確認郵件。",
+	[Key.appointmentClickButton]:
+		"點擊下方按鈕打開 Google 日曆，選擇一個方便的會面時間。",
 };
