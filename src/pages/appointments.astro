@@ -4,16 +4,9 @@ import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-// Google Calendar Embed URL
-// 日历ID: 9f5e97c1642bc40f6e4141399ef083ca51f3bf611c356ae5d95dc9646d1503ef@group.calendar.google.com
-// 使用标准的 Google Calendar 嵌入格式
-
-const CALENDAR_ID =
-	"9f5e97c1642bc40f6e4141399ef083ca51f3bf611c356ae5d95dc9646d1503ef%40group.calendar.google.com";
-const GOOGLE_CALENDAR_EMBED_URL = `https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=America%2FNew_York&mode=WEEK&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0`;
-
-// 备用链接（如果嵌入失败，用户可以点击按钮打开）
-const FALLBACK_URL = "https://calendar.app.google/nZ7uaDZsnU472oTQA";
+// Google Calendar Appointment Scheduling URL
+// 这是 Appointment Schedule 的链接，点击后可以预约时间
+const APPOINTMENT_URL = "https://calendar.app.google/nZ7uaDZsnU472oTQA";
 ---
 
 <MainGridLayout title={i18n(I18nKey.appointmentsTitle)} description={i18n(I18nKey.appointmentsDescription)}>
@@ -47,157 +40,116 @@ const FALLBACK_URL = "https://calendar.app.google/nZ7uaDZsnU472oTQA";
         </div>
     </div>
 
-    <!-- Google Calendar Booking -->
-    <div class="card-base p-6 border-2 border-[var(--primary)]/20">
-        <div class="mb-4 text-center">
-            <h2 class="text-2xl font-bold text-[var(--text-color)] flex items-center justify-center gap-3">
-                <Icon name="material-symbols:calendar-month" class="text-[var(--primary)]" />
-                {i18n(I18nKey.selectTime)}
-            </h2>
+    <!-- Appointment Booking Section -->
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- How it works -->
+        <div class="card-base p-8 border-2 border-[var(--primary)]/20">
+            <div class="flex items-start gap-4 mb-6">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[var(--primary)]/10 flex items-center justify-center">
+                    <Icon name="material-symbols:info" class="text-2xl text-[var(--primary)]" />
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-[var(--text-color)] mb-2">How it works</h3>
+                    <p class="text-[var(--text-color)] opacity-70 leading-relaxed">
+                        Click the booking button to view available time slots and schedule a meeting with me. You'll receive a confirmation email once booked.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-bold text-sm">
+                        1
+                    </div>
+                    <p class="text-[var(--text-color)] opacity-80 pt-1">Click "Book Appointment" button below</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-bold text-sm">
+                        2
+                    </div>
+                    <p class="text-[var(--text-color)] opacity-80 pt-1">Select an available time slot that works for you</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--primary)] text-white flex items-center justify-center font-bold text-sm">
+                        3
+                    </div>
+                    <p class="text-[var(--text-color)] opacity-80 pt-1">Fill in your details and confirm the appointment</p>
+                </div>
+            </div>
         </div>
-        
-        <!-- Embedded Calendar -->
-        <div class="calendar-container" id="calendar-container">
-            <div id="loading-message" class="loading-state">
-                <Icon name="material-symbols:progress-activity" class="text-5xl text-[var(--primary)] animate-spin" />
-                <p class="mt-4 text-[var(--text-color)]">Loading calendar...</p>
+
+        <!-- Quick info -->
+        <div class="card-base p-8 border-2 border-[var(--primary)]/20">
+            <div class="flex items-start gap-4 mb-6">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[var(--primary)]/10 flex items-center justify-center">
+                    <Icon name="material-symbols:schedule" class="text-2xl text-[var(--primary)]" />
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-[var(--text-color)] mb-2">Meeting Details</h3>
+                    <p class="text-[var(--text-color)] opacity-70 leading-relaxed">
+                        Flexible scheduling options to fit your timezone and availability.
+                    </p>
+                </div>
             </div>
-            <iframe
-                id="calendar-iframe"
-                src={GOOGLE_CALENDAR_EMBED_URL}
-                style="border: 0"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                scrolling="no"
-                class="calendar-iframe"
-            ></iframe>
-            <div id="iframe-error" class="iframe-error" style="display: none;">
-                <Icon name="material-symbols:error-outline" class="text-5xl text-[var(--primary)] mb-4" />
-                <h3 class="text-xl font-bold text-[var(--text-color)] mb-3">Unable to load calendar</h3>
-                <p class="text-[var(--text-color)] opacity-70 mb-6">
-                    The calendar cannot be embedded directly. Please click the button below to open it in a new tab.
-                </p>
-                <a
-                    href={FALLBACK_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[var(--primary)] to-[var(--primary)]/80 text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                    <Icon name="material-symbols:event-available" class="text-2xl" />
-                    Open Google Calendar
-                    <Icon name="material-symbols:open-in-new" class="text-xl" />
-                </a>
+            
+            <div class="space-y-4">
+                <div class="flex items-start gap-3">
+                    <Icon name="material-symbols:schedule" class="text-xl text-[var(--primary)] flex-shrink-0 mt-1" />
+                    <div>
+                        <p class="font-semibold text-[var(--text-color)]">Duration</p>
+                        <p class="text-[var(--text-color)] opacity-70 text-sm">30-60 minutes</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <Icon name="material-symbols:videocam" class="text-xl text-[var(--primary)] flex-shrink-0 mt-1" />
+                    <div>
+                        <p class="font-semibold text-[var(--text-color)]">Format</p>
+                        <p class="text-[var(--text-color)] opacity-70 text-sm">Virtual meeting (Google Meet)</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <Icon name="material-symbols:language" class="text-xl text-[var(--primary)] flex-shrink-0 mt-1" />
+                    <div>
+                        <p class="font-semibold text-[var(--text-color)]">Language</p>
+                        <p class="text-[var(--text-color)] opacity-70 text-sm">English / 中文</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Main Booking Button -->
+    <div class="card-base p-12 border-2 border-[var(--primary)]/20 text-center">
+        <div class="max-w-2xl mx-auto">
+            <Icon name="material-symbols:calendar-month" class="text-7xl text-[var(--primary)] mx-auto mb-6" />
+            <h2 class="text-3xl font-bold text-[var(--text-color)] mb-4">
+                Ready to Schedule?
+            </h2>
+            <p class="text-lg text-[var(--text-color)] opacity-70 mb-8 leading-relaxed">
+                Click the button below to view my availability and book a convenient time for our meeting.
+            </p>
+            
+            <a
+                href={APPOINTMENT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-[var(--primary)] to-[var(--primary)]/80 text-white font-bold text-xl rounded-full hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
+            >
+                <Icon name="material-symbols:event-available" class="text-3xl" />
+                Book Appointment
+                <Icon name="material-symbols:arrow-forward" class="text-2xl" />
+            </a>
+            
+            <p class="text-sm text-[var(--text-color)] opacity-50 mt-6">
+                Opens in a new window • Powered by Google Calendar
+            </p>
         </div>
     </div>
 </MainGridLayout>
 
 <style>
-    .calendar-container {
-        width: 100%;
-        min-height: 600px;
-        height: 800px;
-        position: relative;
-        border-radius: var(--radius-large);
-        overflow: hidden;
-        background: var(--card-bg);
-    }
-    
-    .calendar-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: var(--radius-large);
-        opacity: 0;
-        transition: opacity 0.3s ease-in;
-    }
-    
-    .calendar-iframe.loaded {
-        opacity: 1;
-    }
-    
-    .loading-state,
-    .iframe-error {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        text-align: center;
-    }
-    
-    @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    
-    .animate-spin {
-        animation: spin 1s linear infinite;
-    }
-    
-    @media (max-width: 768px) {
-        .calendar-container {
-            min-height: 500px;
-            height: 700px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .calendar-container {
-            min-height: 450px;
-            height: 650px;
-        }
-    }
-    
     a[href^="https://calendar"] {
         text-decoration: none;
     }
 </style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const iframe = document.getElementById('calendar-iframe') as HTMLIFrameElement;
-        const loadingMessage = document.getElementById('loading-message');
-        const errorMessage = document.getElementById('iframe-error');
-        const container = document.getElementById('calendar-container');
-        
-        let hasLoaded = false;
-        
-        // Try to detect if iframe loads successfully
-        iframe.addEventListener('load', () => {
-            hasLoaded = true;
-            if (loadingMessage) loadingMessage.style.display = 'none';
-            iframe.classList.add('loaded');
-        });
-        
-        // If iframe doesn't load within 5 seconds, show error
-        setTimeout(() => {
-            if (!hasLoaded) {
-                if (loadingMessage) loadingMessage.style.display = 'none';
-                if (errorMessage) errorMessage.style.display = 'flex';
-                iframe.style.display = 'none';
-            }
-        }, 5000);
-        
-        // Try to detect if iframe fails to load (iframe blocked)
-        iframe.addEventListener('error', () => {
-            if (loadingMessage) loadingMessage.style.display = 'none';
-            if (errorMessage) errorMessage.style.display = 'flex';
-            iframe.style.display = 'none';
-        });
-    });
-</script>
 
