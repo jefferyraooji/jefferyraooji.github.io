@@ -201,4 +201,12 @@ export const ja: Translation = {
 	[Key.send]: "送信",
 	[Key.emailPlaceholder]: "メールアドレスを入力してください",
 	[Key.messagePlaceholder]: "メッセージを入力してください...",
+	
+	// Appointments
+	[Key.appointments]: "予約",
+	[Key.appointmentsTitle]: "予約を取る",
+	[Key.appointmentsDescription]: "下のカレンダーを使用して、私とのミーティングを予約してください。ご都合の良い利用可能な時間枠を選択してください。",
+	[Key.bookAppointment]: "予約する",
+	[Key.selectTime]: "時間を選択",
+	[Key.appointmentInstructions]: "下のカレンダーから利用可能な時間枠を選択してください。予約後、会議の詳細を含む確認メールが届きます。",
 };

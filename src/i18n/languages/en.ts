@@ -201,4 +201,12 @@ export const en: Translation = {
 	[Key.send]: "Send",
 	[Key.emailPlaceholder]: "Enter your email address",
 	[Key.messagePlaceholder]: "Enter your message here...",
+	
+	// Appointments
+	[Key.appointments]: "Appointments",
+	[Key.appointmentsTitle]: "Book an Appointment",
+	[Key.appointmentsDescription]: "Schedule a meeting with me using the calendar below. Select an available time slot that works for you.",
+	[Key.bookAppointment]: "Book Appointment",
+	[Key.selectTime]: "Select a time",
+	[Key.appointmentInstructions]: "Please select an available time slot from the calendar below. Once you book, you'll receive a confirmation email with the meeting details.",
 };

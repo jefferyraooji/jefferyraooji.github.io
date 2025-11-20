@@ -201,4 +201,12 @@ export const ko: Translation = {
 	[Key.send]: "보내기",
 	[Key.emailPlaceholder]: "이메일 주소를 입력하세요",
 	[Key.messagePlaceholder]: "메시지를 입력하세요...",
+	
+	// Appointments
+	[Key.appointments]: "예약",
+	[Key.appointmentsTitle]: "예약하기",
+	[Key.appointmentsDescription]: "아래 캘린더를 사용하여 저와 미팅을 예약하세요. 편리한 시간대를 선택하세요.",
+	[Key.bookAppointment]: "예약하기",
+	[Key.selectTime]: "시간 선택",
+	[Key.appointmentInstructions]: "아래 캘린더에서 사용 가능한 시간대를 선택해 주세요. 예약 후 회의 세부 정보가 포함된 확인 이메일을 받게 됩니다.",
 };

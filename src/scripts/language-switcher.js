@@ -22,6 +22,7 @@ function updatePageContent(lang) {
             'archive': 'Archive',
             'travel': 'Travel',
             'contact': 'Contact',
+            'appointments': 'Appointments',
             
             // 旅行页面
             'travelFootprint': 'Travel Footprint',
@@ -106,7 +107,14 @@ function updatePageContent(lang) {
             'yourMessage': 'Your message',
             'send': 'Send',
             'emailPlaceholder': 'Enter your email address',
-            'messagePlaceholder': 'Enter your message here...'
+            'messagePlaceholder': 'Enter your message here...',
+            
+            // Appointments
+            'appointmentsTitle': 'Book an Appointment',
+            'appointmentsDescription': 'Schedule a meeting with me using the calendar below. Select an available time slot that works for you.',
+            'bookAppointment': 'Book Appointment',
+            'selectTime': 'Select a time',
+            'appointmentInstructions': 'Please select an available time slot from the calendar below. Once you book, you\'ll receive a confirmation email with the meeting details.'
         },
         'zh_cn': {
             // 导航栏
@@ -114,6 +122,7 @@ function updatePageContent(lang) {
             'archive': '归档',
             'travel': '旅游',
             'contact': '联系',
+            'appointments': '预约',
             
             // 旅行页面
             'travelFootprint': '旅游足迹',
@@ -198,7 +207,14 @@ function updatePageContent(lang) {
             'yourMessage': '您的消息',
             'send': '发送',
             'emailPlaceholder': '请输入您的邮箱地址',
-            'messagePlaceholder': '请输入您的消息...'
+            'messagePlaceholder': '请输入您的消息...',
+            
+            // Appointments
+            'appointmentsTitle': '预约会面',
+            'appointmentsDescription': '使用下面的日历与我预约会面。选择一个适合您的可用时间段。',
+            'bookAppointment': '预约会面',
+            'selectTime': '选择时间',
+            'appointmentInstructions': '请从下面的日历中选择一个可用的时间段。预约成功后，您将收到一封包含会议详情的确认邮件。'
         }
     };
     
@@ -226,6 +242,9 @@ function updateAllContent(t) {
     
     // 更新Contact页面
     updateContactPage(t);
+    
+    // 更新Appointments页面
+    updateAppointmentsPage(t);
     
     // 更新所有文本内容
     updateAllText(t);
@@ -424,4 +443,33 @@ function updateContactPage(t) {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
         </svg>${t.send}`;
     }
+}
+
+function updateAppointmentsPage(t) {
+    // 更新Appointments页面标题
+    const appointmentsTitle = document.querySelector('h1');
+    if (appointmentsTitle && (appointmentsTitle.textContent.includes('Book an Appointment') || appointmentsTitle.textContent.includes('预约会面'))) {
+        appointmentsTitle.textContent = t.appointmentsTitle;
+    }
+    
+    // 更新Appointments页面描述
+    const appointmentsDesc = document.querySelector('p');
+    if (appointmentsDesc && (appointmentsDesc.textContent.includes('Schedule a meeting') || appointmentsDesc.textContent.includes('使用下面的日历'))) {
+        appointmentsDesc.textContent = t.appointmentsDescription;
+    }
+    
+    // 更新选择时间标题
+    const selectTimeHeading = document.querySelector('h2');
+    if (selectTimeHeading && (selectTimeHeading.textContent.includes('Select a time') || selectTimeHeading.textContent.includes('选择时间'))) {
+        selectTimeHeading.textContent = t.selectTime;
+    }
+    
+    // 更新说明文字
+    const instructions = document.querySelectorAll('h2, p');
+    instructions.forEach(el => {
+        const text = el.textContent.trim();
+        if (text.includes('Please select an available time slot') || text.includes('请从下面的日历中选择')) {
+            el.textContent = t.appointmentInstructions;
+        }
+    });
 }

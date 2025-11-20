@@ -198,6 +198,14 @@ enum I18nKey {
 	send = "send",
 	emailPlaceholder = "emailPlaceholder",
 	messagePlaceholder = "messagePlaceholder",
+	
+	// Appointments
+	appointments = "appointments",
+	appointmentsTitle = "appointmentsTitle",
+	appointmentsDescription = "appointmentsDescription",
+	bookAppointment = "bookAppointment",
+	selectTime = "selectTime",
+	appointmentInstructions = "appointmentInstructions",
 }
 
 export default I18nKey;

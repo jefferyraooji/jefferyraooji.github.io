@@ -201,4 +201,12 @@ export const zh_TW: Translation = {
 	[Key.send]: "發送",
 	[Key.emailPlaceholder]: "請輸入您的電子郵件地址",
 	[Key.messagePlaceholder]: "請輸入您的訊息...",
+	
+	// Appointments
+	[Key.appointments]: "預約",
+	[Key.appointmentsTitle]: "預約會面",
+	[Key.appointmentsDescription]: "使用下面的日曆與我預約會面。選擇一個適合您的可用時間段。",
+	[Key.bookAppointment]: "預約會面",
+	[Key.selectTime]: "選擇時間",
+	[Key.appointmentInstructions]: "請從下面的日曆中選擇一個可用的時間段。預約成功後，您將收到一封包含會議詳情的確認郵件。",
 };

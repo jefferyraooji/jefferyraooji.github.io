@@ -201,4 +201,12 @@ export const th: Translation = {
 	[Key.send]: "ส่ง",
 	[Key.emailPlaceholder]: "กรอกที่อยู่อีเมลของคุณ",
 	[Key.messagePlaceholder]: "กรอกข้อความของคุณที่นี่...",
+	
+	// Appointments
+	[Key.appointments]: "นัดหมาย",
+	[Key.appointmentsTitle]: "จองนัดหมาย",
+	[Key.appointmentsDescription]: "กำหนดการประชุมกับฉันโดยใช้ปฏิทินด้านล่าง เลือกช่วงเวลาที่ว่างที่เหมาะกับคุณ",
+	[Key.bookAppointment]: "จองนัดหมาย",
+	[Key.selectTime]: "เลือกเวลา",
+	[Key.appointmentInstructions]: "กรุณาเลือกช่วงเวลาที่ว่างจากปฏิทินด้านล่าง เมื่อคุณจองแล้ว คุณจะได้รับอีเมลยืนยันพร้อมรายละเอียดการประชุม",
 };

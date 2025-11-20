@@ -201,4 +201,12 @@ export const es: Translation = {
 	[Key.send]: "Enviar",
 	[Key.emailPlaceholder]: "Ingresa tu dirección de email",
 	[Key.messagePlaceholder]: "Ingresa tu mensaje aquí...",
+	
+	// Appointments
+	[Key.appointments]: "Citas",
+	[Key.appointmentsTitle]: "Reservar una Cita",
+	[Key.appointmentsDescription]: "Programa una reunión conmigo usando el calendario a continuación. Selecciona un horario disponible que te funcione.",
+	[Key.bookAppointment]: "Reservar Cita",
+	[Key.selectTime]: "Seleccionar un horario",
+	[Key.appointmentInstructions]: "Por favor selecciona un horario disponible del calendario a continuación. Una vez que reserves, recibirás un correo de confirmación con los detalles de la reunión.",
 };
