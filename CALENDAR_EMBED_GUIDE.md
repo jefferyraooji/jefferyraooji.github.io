@@ -40,9 +40,26 @@ https://calendar.google.com/calendar/embed?src=YOUR_EMAIL%40gmail.com&ctz=Americ
 
 ## ⚠️ 重要提示
 
-### 隐私设置
-- 日历必须设置为 **"公开"** 或 **"公开可见"**
-- 在 Settings → "Access permissions" → 勾选 **"Make available to public"**
+### ✅ 日历已配置！
+
+你的日历ID已经成功提取并配置：
+```
+9f5e97c1642bc40f6e4141399ef083ca51f3bf611c356ae5d95dc9646d1503ef@group.calendar.google.com
+```
+
+### 隐私设置（必须！）
+
+**⚠️ 如果嵌入不显示，请确保日历是公开的：**
+
+1. 打开 [Google Calendar](https://calendar.google.com)
+2. 在左侧找到你的日历
+3. 点击日历名称旁的 **⋮** (三个点)
+4. 选择 **"Settings and sharing"** (设置和共享)
+5. 向下滚动到 **"Access permissions for events"** (活动访问权限)
+6. 勾选 ✅ **"Make available to public"** (公开)
+7. 保存设置
+
+**没有公开设置，嵌入将无法工作！**
 
 ### 当前问题
 - `calendar.app.google/xxxxx` 这种**短链接格式不支持 iframe 嵌入**

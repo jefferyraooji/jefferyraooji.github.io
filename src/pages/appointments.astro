@@ -5,20 +5,15 @@ import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
 // Google Calendar Embed URL
-// 要获取嵌入链接，请访问：
-// 1. Google Calendar (网页端) → 设置
-// 2. 左侧找到你的 Appointment Schedule
-// 3. 向下滚动找到"嵌入代码"部分
-// 4. 复制 iframe 的 src 链接
-// 格式应该是：https://calendar.google.com/calendar/appointments/schedules/...
-// 或者普通日历：https://calendar.google.com/calendar/embed?src=...
+// 日历ID: 9f5e97c1642bc40f6e4141399ef083ca51f3bf611c356ae5d95dc9646d1503ef@group.calendar.google.com
+// 使用标准的 Google Calendar 嵌入格式
 
-// 临时使用预约链接（如果嵌入不工作，会显示"在新标签页打开"按钮）
-const GOOGLE_CALENDAR_EMBED_URL =
-	"https://calendar.app.google/nZ7uaDZsnU472oTQA";
+const CALENDAR_ID =
+	"9f5e97c1642bc40f6e4141399ef083ca51f3bf611c356ae5d95dc9646d1503ef%40group.calendar.google.com";
+const GOOGLE_CALENDAR_EMBED_URL = `https://calendar.google.com/calendar/embed?src=${CALENDAR_ID}&ctz=America%2FNew_York&mode=WEEK&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0`;
 
-// 备用：如果你有 Google Calendar ID，可以用这个格式：
-// const GOOGLE_CALENDAR_EMBED_URL = `https://calendar.google.com/calendar/embed?src=${YOUR_CALENDAR_ID}&ctz=America/New_York`;
+// 备用链接（如果嵌入失败，用户可以点击按钮打开）
+const FALLBACK_URL = "https://calendar.app.google/nZ7uaDZsnU472oTQA";
 ---
 
 <MainGridLayout title={i18n(I18nKey.appointmentsTitle)} description={i18n(I18nKey.appointmentsDescription)}>
@@ -84,7 +79,7 @@ const GOOGLE_CALENDAR_EMBED_URL =
                     The calendar cannot be embedded directly. Please click the button below to open it in a new tab.
                 </p>
                 <a
-                    href={GOOGLE_CALENDAR_EMBED_URL}
+                    href={FALLBACK_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[var(--primary)] to-[var(--primary)]/80 text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
