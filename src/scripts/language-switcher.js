@@ -97,7 +97,7 @@ function updatePageContent(lang) {
 
 			// Profile
 			profileBio:
-				"Jincheng(Jeffery) Rao is a master student at Duke University. He is a Machine Learning summer intern at Forest Vision.",
+				"Jincheng (Jeffery) Rao is currently a PhD student in Electrical Engineering at Arizona State University. His research focuses on chaos, machine learning, and nonlinear systems. Previously, he was a master's student at Duke University in Risk Engineering with a minor in Computer Science, with a mathematics background from the University of Liverpool, and gained hands-on experience through research work and his internship at Forest Vision.",
 
 			// Contact
 			contact: "Contact",
@@ -202,7 +202,7 @@ function updatePageContent(lang) {
 
 			// Profile
 			profileBio:
-				"Jincheng(Jeffery) Rao是杜克大学的研究生。他是Forest Vision的机器学习暑期实习生。",
+				"Jincheng（Jeffery）Rao目前是亚利桑那州立大学（ASU）电子工程博士生，研究方向包括混沌、机器学习和非线性系统。此前，他在杜克大学攻读风险工程硕士并辅修计算机科学，本科数学背景来自利物浦大学，并通过科研项目和Forest Vision机器学习实习积累了实践经验。",
 
 			// Contact
 			contact: "联系",
@@ -506,7 +506,11 @@ function updateProfile(t) {
 		const text = el.textContent.trim();
 		if (
 			text.includes("Jincheng(Jeffery) Rao is a master student") ||
-			text.includes("Jincheng(Jeffery) Rao是杜克大学的研究生")
+			text.includes("Jincheng(Jeffery) Rao是杜克大学的研究生") ||
+			text.includes("Jincheng (Jeffery) Rao is a master's student") ||
+			text.includes("Jincheng（Jeffery）Rao是杜克大学风险工程硕士") ||
+			text.includes("Jincheng (Jeffery) Rao is currently a PhD student") ||
+			text.includes("Jincheng（Jeffery）Rao目前是亚利桑那州立大学")
 		) {
 			el.textContent = t.profileBio;
 		}

@@ -56,7 +56,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.JPG", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Jincheng Rao",
-	bio: "Jincheng (Jeffery) Rao is a master's student at Duke University and a Machine Learning summer intern at Forest Vision. He enjoys building practical AI systems, writing about travel and life, and sharing lessons from research and engineering projects.",
+	bio: "Jincheng (Jeffery) Rao is currently a PhD student in Electrical Engineering at Arizona State University. His research focuses on chaos, machine learning, and nonlinear systems. Previously, he was a master's student at Duke University in Risk Engineering with a minor in Computer Science, with a mathematics background from the University of Liverpool, and gained hands-on experience through research work and his internship at Forest Vision.",
 	links: [
 		{
 			name: "LinkedIn",
